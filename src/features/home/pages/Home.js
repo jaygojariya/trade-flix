@@ -25,7 +25,6 @@ const Home = () => {
   return (
     <div
       style={{
-        padding: 24,
         display: "flex",
         flexDirection: "column",
         alignItems: "center",

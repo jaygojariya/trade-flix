@@ -1,17 +1,15 @@
+import React from 'react';
+import { useSelector } from 'react-redux';
 import { Navigate } from 'react-router-dom';
 
-import FullPageLayout from "./../layouts/FullPageLayout";
+const PublicRoute = ({ children }) => {
+  const { isLoggedIn } = useSelector((state) => state.auth);
 
-function PublicRoute({ component: Component }) {
-  const token = null;
+  if (isLoggedIn) {
+    return <Navigate to="/profile" replace />;
+  }
 
-  return token ? (
-    <Navigate to="/" />
-  ) : (
-    <FullPageLayout>
-      <Component />
-    </FullPageLayout>
-  );
-}
+  return children;
+};
 
 export default PublicRoute;

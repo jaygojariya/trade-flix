@@ -10,6 +10,11 @@
       "StackName": "amplify-tradeflix-dev-daee8",
       "StackId": "arn:aws:cloudformation:ap-south-1:767398017597:stack/amplify-tradeflix-dev-daee8/8bed7c60-3dd5-11ef-bec6-0663e47e477f",
       "AmplifyAppId": "d2l1vjq9ogp4io"
+    },
+    "categories": {
+      "hosting": {
+        "S3AndCloudFront": {}
+      }
     }
   }
 }
